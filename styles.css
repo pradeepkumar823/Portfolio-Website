@@ -1437,20 +1437,86 @@ body.intro-active footer {
 
 @media (max-width: 768px) {
   .intro-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem; /* Reduced from 2.8rem */
+    margin-bottom: 15px;
+  }
+  .intro-subtitle {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  .intro-desc {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .intro-section {
+    padding: 30px 20px; /* Reduced padding */
+    width: 90%; /* Ensure it fits */
+    max-height: 80vh; /* Prevent overflow */
+    overflow-y: auto; /* Allow scrolling content if needed */
   }
   .intro-stats {
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
+    margin-top: 25px;
+  }
+  .stat-number {
+    font-size: 2.2rem;
   }
   .intro-projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack projects */
+    gap: 15px;
+    margin-top: 25px;
+  }
+  .mini-project-card {
+    width: 100%; /* Full width */
+    padding: 20px;
+    flex-direction: row; /* Horizontal layout for mobile */
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .mini-project-card i {
+    font-size: 1.5rem;
+  }
+  .intro-social {
+    gap: 15px;
+    margin-top: 25px;
+  }
+  .social-pill {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .intro-skip {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
   }
   .intro-progress {
-    width: 85%;
+    width: 90%;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-title {
+    font-size: 1.5rem;
+  }
+  .intro-subtitle {
+    font-size: 1rem;
   }
   .intro-section {
-    padding: 40px 30px;
+    padding: 25px 15px;
+  }
+  .mini-project-card {
+    padding: 15px;
+  }
+  .project-preview {
+      /* Ensure projects section uses full width too */
+      padding: 15px;
+  }
+  .stat-item {
+      padding: 15px;
   }
 }
 
