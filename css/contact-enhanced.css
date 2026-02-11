@@ -153,12 +153,21 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+    .contact-hero {
+        padding: 140px 5% 40px;
+    }
+
     .contact-container-split {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
+        padding: 0 5% 60px;
     }
     
     .contact-form-glass {
-        padding: 30px;
+        padding: 30px 20px;
+    }
+
+    .contact-info-wrapper {
+        order: 2; /* Move contact info below form on mobile */
     }
 }

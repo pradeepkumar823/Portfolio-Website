@@ -128,10 +128,11 @@ html[data-theme="orange"] {
 
 @media (max-width: 768px) {
   .theme-switcher {
-    top: auto;
-    bottom: 120px;
+    top: 100px; /* Below navbar */
+    bottom: auto;
+    left: auto;
     right: 20px;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -2286,7 +2287,7 @@ body {
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 999;
+  z-index: 1005; /* Higher than Back-to-Top (1000) */
 }
 
 .fab-main {
@@ -2748,6 +2749,15 @@ body {
   border-color: transparent;
   transform: scale(1.1) translateY(-5px);
   box-shadow: 0 15px 30px rgba(139, 92, 246, 0.4);
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 90px; /* Stack above the FAB (20px + 60px + 10px gap) */
+    right: 20px;
+    width: 60px; /* Match FAB size for alignment */
+    height: 60px;
+  }
 }
 
 .back-to-top::after {

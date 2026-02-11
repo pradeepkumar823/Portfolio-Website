@@ -419,37 +419,56 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .about-hero {
+        padding: 120px 5% 50px;
+        min-height: auto;
+    }
+
     .about-title-large {
         font-size: 3rem;
     }
     
+    .story-section {
+        padding: 60px 5%;
+    }
+
     .story-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .story-card {
+        padding: 30px;
     }
     
     .timeline-enhanced::before {
-        left: 30px;
+        left: 20px;
     }
     
     .timeline-node {
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 60px;
-        margin-bottom: 60px;
+        padding-left: 50px;
+        margin-bottom: 50px;
     }
     
     .timeline-dot {
-        left: 30px;
+        left: 20px;
     }
     
     .timeline-content-card {
         width: 100%;
         text-align: left !important;
         margin: 0 !important;
+        padding: 20px;
     }
     
     .stats-grid {
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
+    }
+
+    .achievements-enhanced-grid {
+        grid-template-columns: 1fr;
     }
 }

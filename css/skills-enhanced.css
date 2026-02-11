@@ -121,10 +121,25 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-    .skills-title-large {
-        font-size: 2.5rem;
+    .skills-hero {
+        padding: 130px 5% 40px;
     }
+
+    .skills-title-large {
+        font-size: 2.8rem;
+    }
+
     .skills-grid-enhanced {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 15px;
+    }
+    
+    .skill-card-glass {
+        padding: 20px 10px;
+        height: 140px;
+    }
+    
+    .skill-icon-large {
+        font-size: 2.5rem;
     }
 }

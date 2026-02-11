@@ -149,10 +149,11 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
+/* RESTORED CARD STYLES */
 .project-card-glass {
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
@@ -289,9 +290,67 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .projects-hero h1 { font-size: 2.5rem; }
-    .grid-container { grid-template-columns: 1fr; }
-    .filter-container { flex-direction: column; align-items: stretch; }
+    .projects-hero {
+        padding: 140px 5% 40px; /* More top padding for fixed navbar */
+        min-height: auto;
+    }
+
+    .projects-hero h1 { 
+        font-size: 2.5rem; 
+    }
+    
+    .project-stats {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .stat-item-hero {
+        flex: 1;
+        min-width: 100px;
+        padding: 10px;
+    }
+
+    /* Disable sticky filter on mobile to save screen space */
+    .filter-section {
+        position: static;
+        top: auto;
+        padding: 15px 5%;
+    }
+
+    .filter-container { 
+        flex-direction: column; 
+        align-items: stretch; 
+        gap: 15px;
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+    
+    .filter-buttons {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 6px 16px;
+        font-size: 0.85rem;
+        flex: 1;
+        text-align: center;
+        min-width: 80px;
+    }
+
+    /* Single column for very small screens, 2 for larger phones */
+    .grid-container { 
+        grid-template-columns: 1fr; 
+        gap: 25px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
