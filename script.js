@@ -452,6 +452,36 @@ document.addEventListener("DOMContentLoaded", () => {
     if (progressBar) progressBar.style.width = scrolled + "%";
   });
 
+  /* =========================================
+     4.1. MOBILE HAMBURGER MENU TOGGLE
+     ========================================= */
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+
+    // Close menu when clicking on a link
+    const navItems = document.querySelectorAll(".nav-links a");
+    navItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!navbar.contains(e.target)) {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+    });
+  }
+
   // 3D Tilt Effect for Cards
   const tiltCards = document.querySelectorAll(
     ".project-card-glass, .skill-card, .glass-card, .contact-card, .featured-card",
@@ -627,13 +657,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // Auto-populate date field
       const dateField = document.getElementById("contact-date");
       const now = new Date();
-      const formattedDate = now.toLocaleString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
+      const formattedDate = now.toLocaleString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
       });
       dateField.value = formattedDate;
 
