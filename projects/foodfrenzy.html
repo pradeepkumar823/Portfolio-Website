@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodFrenzy | Pradeep Kumar</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/project-template.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo"><a href="../index.html">PK.</a></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../skills.html">Skills</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Back Navigation -->
+    <div class="back-nav">
+      <a href="../projects.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Projects
+      </a>
+    </div>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <span class="project-category">Full-Stack Application</span>
+        <h1 class="project-title">FoodFrenzy</h1>
+        <p class="project-tagline">
+          Scalable Food Ordering Platform with Microservices Architecture
+        </p>
+
+        <div class="project-tech-badges">
+          <span class="tech-badge">Java</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">OAuth2</span>
+          <span class="tech-badge">RBAC</span>
+          <span class="tech-badge">REST API</span>
+          <span class="tech-badge">Microservices</span>
+        </div>
+
+        <div class="project-cta-buttons">
+          <a
+            href="https://github.com/pradeepkumar823/FoodFrenzy-main"
+            target="_blank"
+            class="btn-github"
+          >
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+          <a href="#" class="btn-demo">
+            <i class="fa-solid fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+      <div class="section-container">
+        <div class="overview-grid">
+          <div class="overview-content">
+            <h2>Project Overview</h2>
+            <p>
+              FoodFrenzy is a comprehensive food ordering platform built with a
+              microservices architecture, designed to handle high traffic and
+              provide seamless user experience. The platform features Google
+              OAuth2 authentication, role-based access control, and scalable
+              RESTful APIs deployed on Render.
+            </p>
+            <p>
+              The application implements modern software engineering practices
+              including clean architecture, dependency injection, and
+              comprehensive error handling. It reduces code complexity by 40%
+              through efficient design patterns and modular structure.
+            </p>
+            <p>
+              <strong>Problem Statement:</strong> Traditional food ordering
+              systems often struggle with scalability, security, and
+              maintainability. FoodFrenzy addresses these challenges with a
+              microservices approach, ensuring each component can scale
+              independently while maintaining data consistency.
+            </p>
+          </div>
+
+          <div class="overview-stats">
+            <div class="stat-card">
+              <div class="stat-label">Code Reduction</div>
+              <div class="stat-value">40%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">API Endpoints</div>
+              <div class="stat-value">25+</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Response Time</div>
+              <div class="stat-value">&lt;200ms</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Uptime</div>
+              <div class="stat-value">99.9%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-features">
+      <div class="section-container">
+        <h2
+          style="
+            text-align: center;
+            font-size: 2.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          "
+        >
+          Key Features
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-alt"></i>
+            </div>
+            <h3>Google OAuth2 Authentication</h3>
+            <p>
+              Secure user authentication using Google OAuth2 protocol,
+              eliminating the need for password management and providing
+              seamless login experience.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-user-lock"></i>
+            </div>
+            <h3>Role-Based Access Control</h3>
+            <p>
+              Comprehensive RBAC system with Admin, User, and Vendor roles,
+              ensuring proper authorization and data security across the
+              platform.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h3>Microservices Architecture</h3>
+            <p>
+              Modular design with independent services for users, orders, and
+              products, enabling horizontal scaling and easier maintenance.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>Optimized Database Schema</h3>
+            <p>
+              Normalized MySQL database with efficient indexing and query
+              optimization, reducing data redundancy by 30%.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shopping-cart"></i>
+            </div>
+            <h3>Real-Time Order Management</h3>
+            <p>
+              Live order tracking, status updates, and notification system for
+              seamless communication between customers and vendors.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>Admin Dashboard</h3>
+            <p>
+              Comprehensive analytics dashboard for monitoring orders, revenue,
+              and user activity with real-time insights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack-section">
+      <div class="section-container">
+        <h2
+          style="
+            text-align: center;
+            font-size: 2.5rem;
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          "
+        >
+          Technology Stack
+        </h2>
+
+        <div class="tech-stack-grid">
+          <div class="tech-stack-card">
+            <div class="tech-icon">☕</div>
+            <div class="tech-name">Java 17</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon">🍃</div>
+            <div class="tech-name">Spring Boot</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon">🔐</div>
+            <div class="tech-name">Spring Security</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon">🗄️</div>
+            <div class="tech-name">MySQL</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon">🔑</div>
+            <div class="tech-name">OAuth2</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon">📦</div>
+            <div class="tech-name">JPA/Hibernate</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon">🚀</div>
+            <div class="tech-name">Render</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon">📝</div>
+            <div class="tech-name">Thymeleaf</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges & Learnings -->
+    <section class="challenges-section">
+      <div class="section-container">
+        <h2
+          style="
+            text-align: center;
+            font-size: 2.5rem;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+          "
+        >
+          Challenges & Learnings
+        </h2>
+
+        <div class="challenges-grid">
+          <div class="challenge-item">
+            <h3>⚡ Challenge: OAuth2 Integration</h3>
+            <p>
+              Implementing Google OAuth2 with Spring Security required deep
+              understanding of OAuth2 flow, token management, and session
+              handling. Overcame this by studying OAuth2 specifications and
+              implementing custom success handlers.
+            </p>
+          </div>
+
+          <div class="challenge-item">
+            <h3>🎯 Learning: Microservices Communication</h3>
+            <p>
+              Learned to implement inter-service communication using REST APIs
+              and handle distributed transactions. Implemented circuit breakers
+              and fallback mechanisms for resilience.
+            </p>
+          </div>
+
+          <div class="challenge-item">
+            <h3>⚡ Challenge: Database Optimization</h3>
+            <p>
+              Initial queries were slow with large datasets. Implemented proper
+              indexing, query optimization, and caching strategies, reducing
+              query time by 60%.
+            </p>
+          </div>
+
+          <div class="challenge-item">
+            <h3>🎯 Learning: Deployment on Render</h3>
+            <p>
+              Gained hands-on experience with cloud deployment, environment
+              variables management, database migrations, and continuous
+              deployment workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Pradeep Kumar. Built with
+        <i class="fa-solid fa-heart" style="color: #e25555"></i> and Java.
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

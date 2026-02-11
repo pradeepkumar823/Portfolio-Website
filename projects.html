@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Pradeep Kumar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/projects-enhanced.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Ultra-Premium UI Elements -->
+    <div class="noise-overlay"></div>
+    <div class="mesh-gradient"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">PK.</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+      <div class="container">
+        <h1>My Creative Lab</h1>
+        <p>
+          Exploring the frontiers of technology, one project at a time. From
+          scalable microservices to interactive frontends.
+        </p>
+        <div class="project-stats">
+          <div class="stat-item-hero">
+            <span class="stat-number-hero">10+</span>
+            <span class="stat-label-hero">Live Projects</span>
+          </div>
+          <div class="stat-item-hero">
+            <span class="stat-number-hero">Full</span>
+            <span class="stat-label-hero">Stack Dev</span>
+          </div>
+          <div class="stat-item-hero">
+            <span class="stat-number-hero">350+</span>
+            <span class="stat-label-hero">LeetCode</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="filter-container">
+        <div class="search-box">
+          <i class="fa-solid fa-search"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search projects..."
+          />
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="devops">DevOps</button>
+          <button class="filter-btn" data-filter="game">Games</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+      <div class="grid-container" id="projectsContainer">
+        <!-- FoodFrenzy -->
+        <div class="project-card-glass" data-category="fullstack">
+          <span class="project-category-badge">Full-Stack</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div class="project-info">
+            <h3>FoodFrenzy</h3>
+            <p class="project-description">
+              Scalable food ordering platform with microservices architecture.
+              Features Google OAuth2, RBAC, and RESTful APIs deployed on Render.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">Java Spring Boot</span>
+              <span class="tech-tag-small">MySQL</span>
+              <span class="tech-tag-small">OAuth2</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/foodfrenzy.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/FoodFrenzy-main"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GrievanceHub -->
+        <div class="project-card-glass" data-category="fullstack">
+          <span class="project-category-badge">Full-Stack</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="project-info">
+            <h3>GrievanceHub</h3>
+            <p class="project-description">
+              Citizen complaint management portal with dual authentication
+              (OAuth2 + JWT) and normalized database schema.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">Spring Boot</span>
+              <span class="tech-tag-small">JWT</span>
+              <span class="tech-tag-small">Thymeleaf</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/grievancehub.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/GrievanceHub"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banking App -->
+        <div class="project-card-glass" data-category="fullstack">
+          <span class="project-category-badge">Full-Stack</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-university"></i>
+          </div>
+          <div class="project-info">
+            <h3>Banking Application</h3>
+            <p class="project-description">
+              Secure banking simulation with BCrypt authentication, real-time
+              transaction logging, and complete history tracking.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">Spring Security</span>
+              <span class="tech-tag-small">MySQL</span>
+              <span class="tech-tag-small">JPA</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/banking-app.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/Simple-Banking-Application"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email Sender -->
+        <div class="project-card-glass" data-category="fullstack">
+          <span class="project-category-badge">Full-Stack</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="project-info">
+            <h3>Email Sender</h3>
+            <p class="project-description">
+              Full-stack email application with React frontend and Spring Boot
+              backend for sending and managing emails.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">React</span>
+              <span class="tech-tag-small">Spring Boot</span>
+              <span class="tech-tag-small">REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/email-sender.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/EmailSender-frontend"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weather Website -->
+        <div class="project-card-glass" data-category="frontend">
+          <span class="project-category-badge">Frontend</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <div class="project-info">
+            <h3>Weather Website</h3>
+            <p class="project-description">
+              Real-time weather information website with API integration and
+              responsive design.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">HTML/CSS</span>
+              <span class="tech-tag-small">JS API</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/weather-website.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/Weather-Website"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game 2048 -->
+        <div class="project-card-glass" data-category="game">
+          <span class="project-category-badge">Game</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <div class="project-info">
+            <h3>Game 2048</h3>
+            <p class="project-description">
+              Classic 2048 puzzle game implementation with smooth animations and
+              score tracking.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">JavaScript</span>
+              <span class="tech-tag-small">HTML5/CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/game2048.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/game2048"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microservice -->
+        <div class="project-card-glass" data-category="backend">
+          <span class="project-category-badge">Backend</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <div class="project-info">
+            <h3>Microservices API</h3>
+            <p class="project-description">
+              Robust microservice architecture using Spring Boot for scalable
+              and independent API development.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">Spring Boot</span>
+              <span class="tech-tag-small">Microservices</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/microservices.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/Microservice"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jenkins Pipeline -->
+        <div class="project-card-glass" data-category="devops">
+          <span class="project-category-badge">DevOps</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-code-branch"></i>
+          </div>
+          <div class="project-info">
+            <h3>Jenkins Pipeline</h3>
+            <p class="project-description">
+              Automated CI/CD pipeline implementation using Jenkins for build,
+              test, and deployment orchestration.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">Jenkins</span>
+              <span class="tech-tag-small">Docker</span>
+              <span class="tech-tag-small">CI/CD</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/devops-projects.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/pipeline-example"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java App Jenkins -->
+        <div class="project-card-glass" data-category="devops">
+          <span class="project-category-badge">DevOps</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-cogs"></i>
+          </div>
+          <div class="project-info">
+            <h3>Java App Automation</h3>
+            <p class="project-description">
+              Java web application integrated with Jenkins for continuous
+              integration and reliable deployment flows.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">Java</span>
+              <span class="tech-tag-small">Maven</span>
+              <span class="tech-tag-small">Jenkins</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/devops-projects.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/javaapp-jenkins"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reactive App -->
+        <div class="project-card-glass" data-category="backend">
+          <span class="project-category-badge">Backend</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="project-info">
+            <h3>Reactive App</h3>
+            <p class="project-description">
+              High-performance reactive application using Spring WebFlux for
+              asynchronous, non-blocking operations.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">Spring WebFlux</span>
+              <span class="tech-tag-small">Async</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/microservices.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/reactive-app-with-asynchronous-api"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Counter Button -->
+        <div class="project-card-glass" data-category="frontend">
+          <span class="project-category-badge">Frontend</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-mouse-pointer"></i>
+          </div>
+          <div class="project-info">
+            <h3>Counter Button</h3>
+            <p class="project-description">
+              Simple React-based click counter demonstrating useState hooks and
+              state management.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">React</span>
+              <span class="tech-tag-small">Hooks</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/frontend-projects.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/COUNTER-BUTTON"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Like Button -->
+        <div class="project-card-glass" data-category="frontend">
+          <span class="project-category-badge">Frontend</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="project-info">
+            <h3>Like Button</h3>
+            <p class="project-description">
+              Interactive like button component with smooth animations and state
+              state persistence.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">React</span>
+              <span class="tech-tag-small">CSS Animation</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/frontend-projects.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/Like-Button"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lottery Game -->
+        <div class="project-card-glass" data-category="game">
+          <span class="project-category-badge">Game</span>
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-dice"></i>
+          </div>
+          <div class="project-info">
+            <h3>Lottery Game</h3>
+            <p class="project-description">
+              Fun interactive lottery game with random number generation logic
+              and winning notifications.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag-small">JavaScript</span>
+              <span class="tech-tag-small">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/frontend-projects.html" class="project-link-btn"
+                >View Details</a
+              >
+              <a
+                href="https://github.com/pradeepkumar823/Lottery-Game"
+                target="_blank"
+                class="project-link-btn secondary"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+      <button
+        class="theme-btn theme-purple active"
+        data-theme="purple"
+        title="Purple Theme"
+      ></button>
+      <button
+        class="theme-btn theme-blue"
+        data-theme="blue"
+        title="Blue Theme"
+      ></button>
+      <button
+        class="theme-btn theme-emerald"
+        data-theme="emerald"
+        title="Emerald Theme"
+      ></button>
+      <button
+        class="theme-btn theme-orange"
+        data-theme="orange"
+        title="Orange Theme"
+      ></button>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2026 Pradeep Kumar. Built with
+        <i class="fa-solid fa-heart" style="color: #e25555"></i> and Java.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Project Filter and Search
+      const searchInput = document.getElementById("searchInput");
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const projectCards = document.querySelectorAll(".project-card-glass");
+
+      // Search functionality
+      searchInput.addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        projectCards.forEach((card) => {
+          const title = card.querySelector("h3").textContent.toLowerCase();
+          const description = card
+            .querySelector(".project-description")
+            .textContent.toLowerCase();
+          const tags = Array.from(card.querySelectorAll(".tech-tag-small"))
+            .map((tag) => tag.textContent.toLowerCase())
+            .join(" ");
+
+          if (
+            title.includes(searchTerm) ||
+            description.includes(searchTerm) ||
+            tags.includes(searchTerm)
+          ) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+
+      // Filter functionality
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          // Add active class to clicked button
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+
+          projectCards.forEach((card) => {
+            if (
+              filter === "all" ||
+              card.getAttribute("data-category") === filter
+            ) {
+              card.style.display = "flex";
+            } else {
+              card.style.display = "none";
+            }
+          });
+
+          // Reset search
+          searchInput.value = "";
+        });
+      });
+    </script>
+  </body>
+</html>

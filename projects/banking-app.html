@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Application | Pradeep Kumar</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/project-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="../index.html">PK.</a></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../skills.html">Skills</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <div class="back-nav">
+      <a href="../projects.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Projects
+      </a>
+    </div>
+
+    <section
+      class="project-hero"
+      style="background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%)"
+    >
+      <div class="project-hero-content">
+        <span class="project-category">Full-Stack Application</span>
+        <h1 class="project-title">Banking Application</h1>
+        <p class="project-tagline">Secure Banking Simulation System</p>
+
+        <div class="project-tech-badges">
+          <span class="tech-badge">Java</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">Spring Security</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">JPA</span>
+          <span class="tech-badge">BCrypt</span>
+        </div>
+
+        <div class="project-cta-buttons">
+          <a
+            href="https://github.com/pradeepkumar823/Simple-Banking-Application"
+            target="_blank"
+            class="btn-github"
+          >
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-overview">
+      <div class="section-container">
+        <div class="overview-grid">
+          <div class="overview-content">
+            <h2>Project Overview</h2>
+            <p>
+              A full-stack banking application that simulates core banking
+              operations with enterprise-grade security. The system implements
+              BCrypt password hashing, Spring Security for authentication, and
+              comprehensive transaction management.
+            </p>
+            <p>
+              Features include real-time transaction logging, deposit and
+              withdrawal operations, account balance management, and complete
+              transaction history with timestamps and descriptions.
+            </p>
+          </div>
+
+          <div class="overview-stats">
+            <div class="stat-card">
+              <div class="stat-label">Security</div>
+              <div class="stat-value">BCrypt</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Transactions</div>
+              <div class="stat-value">Real-Time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-features">
+      <div class="section-container">
+        <h2
+          style="
+            text-align: center;
+            font-size: 2.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          "
+        >
+          Key Features
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-alt"></i>
+            </div>
+            <h3>Secure Authentication</h3>
+            <p>
+              BCrypt password hashing and Spring Security for robust user
+              authentication.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-exchange-alt"></i>
+            </div>
+            <h3>Transaction Management</h3>
+            <p>
+              Real-time deposits, withdrawals, and transfers with complete audit
+              trail.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-history"></i></div>
+            <h3>Transaction History</h3>
+            <p>
+              Detailed transaction logs with timestamps, amounts, and
+              descriptions.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+            <h3>Account Management</h3>
+            <p>
+              Create and manage multiple accounts with real-time balance
+              updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Pradeep Kumar. Built with
+        <i class="fa-solid fa-heart" style="color: #e25555"></i> and Java.
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

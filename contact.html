@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Pradeep Kumar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/contact-enhanced.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Ultra-Premium UI Elements -->
+    <div class="noise-overlay"></div>
+    <div class="mesh-gradient"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">PK.</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1
+          style="
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          "
+        >
+          Let's Start a Conversation
+        </h1>
+        <p style="color: var(--text-secondary); font-size: 1.2rem">
+          Have a project in mind or just want to chat about tech?
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Split Section -->
+    <section class="section">
+      <div class="contact-container-split">
+        <!-- Left Side: Contact Info -->
+        <div class="contact-info-wrapper">
+          <a
+            href="mailto:pksinghgolu76310@gmail.com"
+            class="contact-card-glass"
+          >
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email Me</h3>
+              <p>pksinghgolu76310@gmail.com</p>
+            </div>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/kumarpradeep23/"
+            target="_blank"
+            class="contact-card-glass"
+          >
+            <div class="contact-icon-box">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-text">
+              <h3>LinkedIn</h3>
+              <p>Connect professionally</p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/pradeepkumar823"
+            target="_blank"
+            class="contact-card-glass"
+          >
+            <div class="contact-icon-box">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-text">
+              <h3>GitHub</h3>
+              <p>Explore my code</p>
+            </div>
+          </a>
+
+          <div class="contact-card-glass" style="cursor: default">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Location</h3>
+              <p>Japla, Jharkhand, India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Glass Form -->
+        <div class="contact-form-glass">
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="contact-name"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="contact-email"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="contact-subject"
+                class="form-input"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea
+                name="message"
+                id="contact-message"
+                class="form-textarea"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Hidden date field for EmailJS -->
+            <input type="hidden" name="date" id="contact-date" />
+
+            <button type="submit" class="btn-submit-glass" id="submit-btn">
+              <span id="btn-text">Send Message</span>
+              <i class="fa-solid fa-paper-plane" id="btn-icon"></i>
+            </button>
+
+            <!-- Status Message -->
+            <div
+              id="form-status"
+              style="margin-top: 20px; text-align: center; display: none"
+            ></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+      <button
+        class="theme-btn theme-purple active"
+        data-theme="purple"
+        title="Purple Theme"
+      ></button>
+      <button
+        class="theme-btn theme-blue"
+        data-theme="blue"
+        title="Blue Theme"
+      ></button>
+      <button
+        class="theme-btn theme-emerald"
+        data-theme="emerald"
+        title="Emerald Theme"
+      ></button>
+      <button
+        class="theme-btn theme-orange"
+        data-theme="orange"
+        title="Orange Theme"
+      ></button>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2026 Pradeep Kumar. Built with
+        <i class="fa-solid fa-heart" style="color: #e25555"></i> and Java.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrievanceHub | Pradeep Kumar</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/project-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="../index.html">PK.</a></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../skills.html">Skills</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <div class="back-nav">
+      <a href="../projects.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Projects
+      </a>
+    </div>
+
+    <section
+      class="project-hero"
+      style="background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)"
+    >
+      <div class="project-hero-content">
+        <span class="project-category">Full-Stack Application</span>
+        <h1 class="project-title">GrievanceHub</h1>
+        <p class="project-tagline">Citizen Complaint Management Portal</p>
+
+        <div class="project-tech-badges">
+          <span class="tech-badge">Java</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">JWT</span>
+          <span class="tech-badge">OAuth2</span>
+          <span class="tech-badge">Thymeleaf</span>
+        </div>
+
+        <div class="project-cta-buttons">
+          <a
+            href="https://github.com/pradeepkumar823/GrievanceHub"
+            target="_blank"
+            class="btn-github"
+          >
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-overview">
+      <div class="section-container">
+        <div class="overview-grid">
+          <div class="overview-content">
+            <h2>Project Overview</h2>
+            <p>
+              GrievanceHub is a comprehensive citizen complaint management
+              system designed to streamline the process of filing, tracking, and
+              resolving public grievances. The platform implements dual
+              authentication mechanisms (OAuth2 + JWT) for enhanced security.
+            </p>
+            <p>
+              The system features a normalized database schema that reduces data
+              redundancy by 30%, ensuring efficient data storage and retrieval.
+              Role-based access control ensures that citizens, administrators,
+              and officials have appropriate access levels.
+            </p>
+          </div>
+
+          <div class="overview-stats">
+            <div class="stat-card">
+              <div class="stat-label">Data Reduction</div>
+              <div class="stat-value">30%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Auth Methods</div>
+              <div class="stat-value">2</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">User Roles</div>
+              <div class="stat-value">3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-features">
+      <div class="section-container">
+        <h2
+          style="
+            text-align: center;
+            font-size: 2.5rem;
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          "
+        >
+          Key Features
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+            <h3>Dual Authentication</h3>
+            <p>
+              Secure login using both Google OAuth2 and JWT tokens for maximum
+              security and flexibility.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-file-alt"></i></div>
+            <h3>Complaint Filing</h3>
+            <p>
+              Easy-to-use interface for citizens to file complaints with
+              attachments and detailed descriptions.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-chart-bar"></i>
+            </div>
+            <h3>Status Tracking</h3>
+            <p>
+              Real-time complaint status updates and notification system for
+              transparency.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Normalized Database</h3>
+            <p>
+              Optimized MySQL schema reducing redundancy by 30% for efficient
+              data management.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-users-cog"></i>
+            </div>
+            <h3>Admin Dashboard</h3>
+            <p>
+              Comprehensive dashboard for managing complaints, users, and
+              generating reports.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-bell"></i></div>
+            <h3>Notifications</h3>
+            <p>
+              Automated email notifications for complaint status changes and
+              updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Pradeep Kumar. Built with
+        <i class="fa-solid fa-heart" style="color: #e25555"></i> and Java.
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

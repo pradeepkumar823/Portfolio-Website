@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pradeep Kumar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="intro-active">
+    <!-- Ultra-Premium UI Elements -->
+    <div class="noise-overlay"></div>
+    <div class="mesh-gradient"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Intro Overlay with Portfolio Preview -->
+    <div id="intro-overlay">
+      <div class="intro-orb orb-1"></div>
+      <div class="intro-orb orb-2"></div>
+      <div class="intro-content">
+        <div class="intro-section active" data-section="welcome">
+          <h1 class="intro-title"><span>Welcome</span></h1>
+          <p class="intro-subtitle">Pradeep Kumar's Portfolio</p>
+        </div>
+
+        <div class="intro-section" data-section="about">
+          <h2 class="intro-title"><span>About Me</span></h2>
+          <p class="intro-desc">Java Developer | Problem Solver</p>
+          <div class="intro-stats">
+            <div class="stat-item">
+              <span class="stat-number">350+</span
+              ><span class="stat-label">LeetCode Problems</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">B.Tech</span
+              ><span class="stat-label">CSE Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro-section" data-section="skills">
+          <h2 class="intro-title"><span>Skills</span></h2>
+          <div class="intro-skills">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Microservices</span>
+          </div>
+        </div>
+
+        <div class="intro-section" data-section="projects">
+          <h2 class="intro-title"><span>Featured Projects</span></h2>
+          <div class="intro-projects">
+            <div class="mini-project-card">
+              <i class="fa-solid fa-utensils"></i>
+              <span>FoodFrenzy</span>
+            </div>
+            <div class="mini-project-card">
+              <i class="fa-solid fa-comments"></i>
+              <span>GrievanceHub</span>
+            </div>
+            <div class="mini-project-card">
+              <i class="fa-solid fa-university"></i>
+              <span>Banking App</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro-section" data-section="contact">
+          <h2 class="intro-title"><span>Let's Connect</span></h2>
+          <p class="intro-desc">Ready to build something amazing</p>
+          <div class="intro-social">
+            <div class="social-pill"><i class="fab fa-github"></i></div>
+            <div class="social-pill"><i class="fab fa-linkedin"></i></div>
+            <div class="social-pill"><i class="fa-solid fa-envelope"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-skip" id="skipIntro">
+        <span>Skip Intro</span>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-fill" id="intro-progress-bar"></div>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">PK.</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container hero-content">
+        <div class="profile-container">
+          <img src="profile.jpg" alt="Pradeep Kumar" class="profile-pic" />
+          <div class="profile-glow"></div>
+        </div>
+
+        <h1 class="hero-title">Pradeep Kumar</h1>
+        <p class="hero-subtitle">
+          I am a <span class="typing-text">Java Software Developer</span>
+        </p>
+
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/kumarpradeep23/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/pradeepkumar823" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/im_golusingh8/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <div class="hero-buttons hidden stagger-3">
+          <a
+            href="https://drive.google.com/uc?export=download&id=16gbi5voQIuz2zQ_CSNeVVDaOoQetIlAF"
+            target="_blank"
+            class="btn btn-primary"
+            ><i class="fa-solid fa-download"></i> Download Resume</a
+          >
+          <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tech Stack Marquee -->
+    <section class="tech-marquee">
+      <div class="marquee-content">
+        <span><i class="fab fa-java"></i> Java</span>
+        <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+        <span><i class="fa-solid fa-database"></i> MySQL</span>
+        <span><i class="fab fa-react"></i> React</span>
+        <span><i class="fab fa-docker"></i> Docker</span>
+        <span><i class="fa-solid fa-cubes"></i> Microservices</span>
+        <span><i class="fab fa-aws"></i> AWS</span>
+        <span><i class="fab fa-git-alt"></i> Git</span>
+        <!-- Duplicate for seamless loop -->
+        <span><i class="fab fa-java"></i> Java</span>
+        <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+        <span><i class="fa-solid fa-database"></i> MySQL</span>
+        <span><i class="fab fa-react"></i> React</span>
+        <span><i class="fab fa-docker"></i> Docker</span>
+        <span><i class="fa-solid fa-cubes"></i> Microservices</span>
+        <span><i class="fab fa-aws"></i> AWS</span>
+        <span><i class="fab fa-git-alt"></i> Git</span>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="featured-grid">
+          <!-- FoodFrenzy -->
+          <div class="featured-card">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <i class="fa-solid fa-utensils project-icon"></i>
+              <h3>FoodFrenzy</h3>
+              <p>
+                Scalable food ordering platform with microservices architecture.
+              </p>
+              <div class="card-footer">
+                <a href="projects/foodfrenzy.html" class="link-btn"
+                  >Explore <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- GrievanceHub -->
+          <div class="featured-card">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <i class="fa-solid fa-comments project-icon"></i>
+              <h3>GrievanceHub</h3>
+              <p>
+                Citizen complaint management portal with dual authentication.
+              </p>
+              <div class="card-footer">
+                <a href="projects/grievancehub.html" class="link-btn"
+                  >Explore <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Banking App -->
+          <div class="featured-card">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <i class="fa-solid fa-university project-icon"></i>
+              <h3>Banking App</h3>
+              <p>
+                Secure banking simulation with BCrypt and transaction logging.
+              </p>
+              <div class="card-footer">
+                <a href="projects/banking-app.html" class="link-btn"
+                  >Explore <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-all">
+          <a href="projects.html" class="btn btn-secondary"
+            >View All Projects</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Action Menu -->
+    <div class="fab-wrapper">
+      <button class="fab-main" id="fabMain">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="fab-menu" id="fabMenu">
+        <a href="contact.html" title="Contact Me" class="fab-item"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/kumarpradeep23/"
+          target="_blank"
+          title="LinkedIn"
+          class="fab-item"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/pradeepkumar823"
+          target="_blank"
+          title="GitHub"
+          class="fab-item"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+      <button
+        class="theme-btn theme-purple active"
+        data-theme="purple"
+        title="Purple Theme"
+      ></button>
+      <button
+        class="theme-btn theme-blue"
+        data-theme="blue"
+        title="Blue Theme"
+      ></button>
+      <button
+        class="theme-btn theme-emerald"
+        data-theme="emerald"
+        title="Emerald Theme"
+      ></button>
+      <button
+        class="theme-btn theme-orange"
+        data-theme="orange"
+        title="Orange Theme"
+      ></button>
+    </div>
+
+    <footer class="glass-footer">
+      <div class="footer-container">
+        <!-- Column 1: Brand Identity -->
+        <div class="footer-column footer-brand">
+          <h3 class="footer-logo">PK<span>.</span></h3>
+          <p class="footer-tagline">
+            Java Developer & Backend enthusiast specializing in high-performance
+            digital solutions.
+          </p>
+          <div class="footer-badges">
+            <span class="badge"
+              ><i class="fa-solid fa-code"></i> Java Backend</span
+            >
+            <span class="badge"
+              ><i class="fa-solid fa-bolt"></i> Modern AI</span
+            >
+          </div>
+        </div>
+
+        <!-- Column 2: Focus Areas -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Focus Areas</h4>
+          <ul class="footer-links">
+            <li><span> AI </span></li>
+            <li><span>Java Software Developer</span></li>
+            <li><span>Microservices Architecture</span></li>
+            <li><span>Spring Boot Ecosystem</span></li>
+            <li><span>API Design & Security</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/pradeepkumar823" target="_blank"
+                >View GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/kumarpradeep23/" target="_blank"
+                >LinkedIn Profile</a
+              >
+            </li>
+            <li><a href="#projects">Recent Projects</a></li>
+            <li><a href="mailto:pksinghgolu7610@gmail.com">Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-column footer-contact">
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-social-lite">
+            <a
+              href="https://github.com/pradeepkumar823"
+              target="_blank"
+              class="social-pill-lite"
+              title="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/kumarpradeep23/"
+              target="_blank"
+              class="social-pill-lite"
+              title="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/im_golusingh8/"
+              target="_blank"
+              class="social-pill-lite"
+              title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="mailto:pksinghgolu76310@gmail.com"
+              class="social-pill-lite"
+              title="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <div class="footer-info">
+            <p><i class="fa-solid fa-map-marker-alt"></i> India</p>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> pksinghgolu76310@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <p class="footer-copyright">
+          &copy; 2025 Pradeep Kumar. Built with
+          <i class="fa-solid fa-heart" style="color: #e25555"></i> and Java.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" class="back-to-top" title="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+      <div class="btn-glow"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
