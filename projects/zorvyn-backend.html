@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zorvyn Backend | Pradeep Kumar</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/project-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="../index.html">PK.</a></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../skills.html">Skills</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <div class="back-nav">
+      <a href="../projects.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Projects
+      </a>
+    </div>
+
+    <section
+      class="project-hero"
+      style="background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%)"
+    >
+      <div class="project-hero-content">
+        <span class="project-category">Backend API</span>
+        <h1 class="project-title">Zorvyn Backend</h1>
+        <p class="project-tagline">Secure REST API for a Multi-Role Financial Dashboard</p>
+
+        <div class="project-tech-badges">
+          <span class="tech-badge">Java 17</span>
+          <span class="tech-badge">Spring Boot 3.4.3</span>
+          <span class="tech-badge">Spring Security 6</span>
+          <span class="tech-badge">JJWT (0.11.5)</span>
+          <span class="tech-badge">H2 Database</span>
+        </div>
+
+        <div class="project-cta-buttons">
+          <a
+            href="https://github.com/pradeepkumar823/zorvynBackend"
+            target="_blank"
+            class="btn-github"
+          >
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-overview">
+      <div class="section-container">
+        <div class="overview-grid">
+          <div class="overview-content">
+            <h2>Project Overview</h2>
+            <p>
+              Zorvyn Backend is a production-ready financial dashboard REST API engineered to serve multi-role users. Designed using clean layered architecture patterns in Spring Boot, the API provides high performance, validation, and advanced security constraints.
+            </p>
+            <p>
+              It integrates Spring Security 6 with JJWT to facilitate secure login, token-based requests, and user registration. Role-Based Access Control (RBAC) separates actions for Admins, Users, Analysts, and Viewers, allowing granular access to financial records and summary reports.
+            </p>
+          </div>
+
+          <div class="overview-stats">
+            <div class="stat-card">
+              <div class="stat-label">Java Version</div>
+              <div class="stat-value">17</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Spring Security</div>
+              <div class="stat-value">v6</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Roles Supported</div>
+              <div class="stat-value">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-features">
+      <div class="section-container">
+        <h2
+          style="
+            text-align: center;
+            font-size: 2.5rem;
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          "
+        >
+          Key Features
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+            <h3>JWT Authentication</h3>
+            <p>
+              Token-based user login and registration utilizing JJWT signature verification and filter-level interceptors.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-users-cog"></i></div>
+            <h3>Role-Based Security</h3>
+            <p>
+              Method-level protection (@PreAuthorize) checking roles (ADMIN, USER, ANALYST, VIEWER) for each request handler.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-calculator"></i></div>
+            <h3>Dashboard Calculations</h3>
+            <p>
+              Aggregated queries for income summaries, category breakdowns, monthly trends, and recent transaction lists.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-trash-can"></i></div>
+            <h3>Soft-Delete System</h3>
+            <p>
+              Safely handles deletion of financial records via boolean status filtering in custom JPQL repositories.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Pre-Seeded Data</h3>
+            <p>
+              Development convenience featuring automatically seeded dummy data into an accessible H2 in-memory console.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Structured Validation</h3>
+            <p>
+              Robust Jakarta Bean Validation constraints coupled with a GlobalExceptionHandler for detailed error JSON.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2026 Pradeep Kumar. Built with
+        <i class="fa-solid fa-heart" style="color: #e25555"></i> and Java.
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
