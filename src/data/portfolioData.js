@@ -5,7 +5,7 @@ export const PORTFOLIO_DATA = {
   email: "pksinghgolu76310@gmail.com",
   phone: "+91-7870682477",
   location: "Gurugram, Haryana",
-  profileImage: "/profile.jpg",
+  profileImage: "/imresizer-IMG_20240103_150726.png",
   resumeUrl: "https://drive.google.com/file/d/1Ze3RttFBLdsL41yeMbUjSYoNIhCyAyG8/view?usp=drivesdk",
   socials: {
     linkedin: "https://www.linkedin.com/in/kumarpradeep23/",
