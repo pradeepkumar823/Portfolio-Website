@@ -1,0 +1,13 @@
+export { default as BankingApp } from "./BankingApp";
+export { default as DevOpsProjects } from "./DevOpsProjects";
+export { default as DSAJava } from "./DSAJava";
+export { default as EmailSender } from "./EmailSender";
+export { default as FoodFrenzy } from "./FoodFrenzy";
+export { default as FrontendProjects } from "./FrontendProjects";
+export { default as Game2048 } from "./Game2048";
+export { default as GrievanceHub } from "./GrievanceHub";
+export { default as InfantMilkCare } from "./InfantMilkCare";
+export { default as Microservices } from "./Microservices";
+export { default as ResumeIQ } from "./ResumeIQ";
+export { default as WeatherWebsite } from "./WeatherWebsite";
+export { default as ZorvynBackend } from "./ZorvynBackend";
