@@ -5,7 +5,7 @@ export const PORTFOLIO_DATA = {
   email: "pksinghgolu76310@gmail.com",
   phone: "+91-7870682477",
   location: "Gurugram, Haryana",
-  profileImage: "/imresizer-IMG_20240103_150726.png",
+  profileImage: "./imresizer-IMG_20240103_150726.png",
   resumeUrl: "https://drive.google.com/file/d/1Ze3RttFBLdsL41yeMbUjSYoNIhCyAyG8/view?usp=drivesdk",
   socials: {
     linkedin: "https://www.linkedin.com/in/kumarpradeep23/",
@@ -300,7 +300,7 @@ export const PORTFOLIO_DATA = {
       year: "Sep 2024",
       link: "https://www.hackerrank.com/certificates/c6d26786fb2e",
       details: "Verified proficiency in Java fundamentals, data structures, object-oriented concepts, and control flow.",
-      image: "/cert_java_hackerrank.png"
+      image: "./cert_java_hackerrank.png"
     },
     {
       title: "Spring Boot 3 Essential Training",
@@ -308,7 +308,7 @@ export const PORTFOLIO_DATA = {
       year: "Jan 2026",
       link: "https://www.linkedin.com/learning/certificates/0fbd5769f0c6c4488c7e66bcdb618d028d1047a87a042c7640c7aeb090309b0f",
       details: "Built RESTful APIs using Spring Boot and Spring Data JPA, dependency injection, and configuration management.",
-      image: "/cert_spring_boot.png"
+      image: "./cert_spring_boot.png"
     },
     {
       title: "Career Essentials in Software Development",
@@ -316,7 +316,7 @@ export const PORTFOLIO_DATA = {
       year: "Jan 2026",
       link: "https://www.linkedin.com/learning/certificates/50fa2b452fd32a4033d6ea3085e1cdd13f8a1dcc85a2a15751f6f8692a345ba8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BfppgKHvZTKmSfPRc8gZzEg%3D%3D",
       details: "Comprehensive foundation in modern software engineering principles, Git version control, and team collaboration.",
-      image: "/cert_career_essentials.png"
+      image: "./cert_career_essentials.png"
     },
     {
       title: "Microservices Foundations",
@@ -324,7 +324,7 @@ export const PORTFOLIO_DATA = {
       year: "Aug 2024",
       link: "https://www.linkedin.com/learning/certificates/ae8fa87f09b9ec5cc60221ea3e59a5c6ae860c0b9654ceba9163b2233d1a0350?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BfppgKHvZTKmSfPRc8gZzEg%3D%3D",
       details: "Designed microservice architectures, service discovery, API gateways, and distributed data management patterns.",
-      image: "/cert_microservices.png"
+      image: "./cert_microservices.png"
     },
     {
       title: "Programming in Java Certificate",
@@ -332,7 +332,7 @@ export const PORTFOLIO_DATA = {
       year: "Juny 2025",
       link: "https://drive.google.com/file/d/1FhlDWMW2Qjli5siCkCQC5dSpoEG6J2nJ/view",
       details: "Mastered OOP concepts, exception handling, collections framework, multithreading, and industry-standard coding practices.",
-      image: "/cert_nptel.png"
+      image: "./cert_nptel.png"
     },
     {
       title: "JPMorgan Chase - Software Engineering Simulation",
