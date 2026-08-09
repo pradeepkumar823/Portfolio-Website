@@ -5,7 +5,7 @@ import { Download, Mail, Code, Trophy, Boxes, Sparkles, Coffee, Leaf, Brain, Zap
 import HeroCanvas from "./HeroCanvas";
 
 export default function Hero({ onContactClick }) {
-  const roles = ["Java Software Developer", "Backend & Microservices Specialist", "Spring AI & Kafka Engineer"];
+  const roles = ["Fresher Java Developer", "Java Backend Developer", "Junior Developer"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);

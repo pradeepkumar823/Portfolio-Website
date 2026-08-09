@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { PORTFOLIO_DATA } from "../data/portfolioData";
 import { GithubIcon, LinkedinIcon, InstagramIcon } from "./SocialIcons";
 import confetti from "canvas-confetti";
-import { Mail, MapPin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle2, AlertCircle } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
@@ -72,6 +72,17 @@ export default function Contact() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
         <div className="space-y-6">
+          <div className="glass-panel p-5 sm:p-6 flex items-center gap-4 sm:gap-5">
+            <div className="p-3 sm:p-4 rounded-2xl bg-emerald-500/20 text-emerald-400 shrink-0">
+              <Phone size={26} />
+            </div>
+            <div>
+              <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider">Mobile Number</h4>
+              <a href={`tel:${PORTFOLIO_DATA.phone}`} className="text-lg font-semibold text-white hover:text-cyan-400 transition-colors">
+                {PORTFOLIO_DATA.phone}
+              </a>
+            </div>
+          </div>
           <div className="glass-panel p-5 sm:p-6 flex items-center gap-4 sm:gap-5">
             <div className="p-3 sm:p-4 rounded-2xl bg-purple-500/20 text-purple-400 shrink-0">
               <Mail size={26} />
