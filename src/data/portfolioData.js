@@ -6,7 +6,7 @@ export const PORTFOLIO_DATA = {
   phone: "+91-7870682477",
   location: "Gurugram, Haryana",
   profileImage: "./imresizer-IMG_20240103_150726.png",
-  resumeUrl: "https://drive.google.com/file/d/1Ze3RttFBLdsL41yeMbUjSYoNIhCyAyG8/view?usp=drivesdk",
+  resumeUrl: "https://drive.google.com/file/d/1V1oDjxLZtwcC3ZyV1Zy9RyRbM_-3MXjm/view?usp=sharing",
   socials: {
     linkedin: "https://www.linkedin.com/in/kumarpradeep23/",
     github: "https://github.com/pradeepkumar823",
@@ -16,8 +16,8 @@ export const PORTFOLIO_DATA = {
   summary: "Meticulous and resilient Computer Science and Engineering graduate with hands-on experience in Java, Spring Boot, Spring AI, MySQL, REST APIs, and Microservices. Proven ability to develop secure, scalable, and maintainable backend applications.",
   stats: [
     { label: "Live Projects", value: "15+" },
-    { label: "LeetCode Solved", value: "400+" },
-    { label: "Max Rating", value: "1661" },
+    { label: "LeetCode Solved", value: "470+" },
+    { label: "Peak Rating", value: "1661" },
     { label: "B.Tech CSE", value: "2022 - 2026" }
   ],
   experience: [
