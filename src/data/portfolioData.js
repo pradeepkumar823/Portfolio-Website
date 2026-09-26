@@ -6,7 +6,7 @@ export const PORTFOLIO_DATA = {
   phone: "+91-7870682477",
   location: "Gurugram, Haryana",
   profileImage: "./imresizer-IMG_20240103_150726.png",
-  resumeUrl: "https://drive.google.com/file/d/1V1oDjxLZtwcC3ZyV1Zy9RyRbM_-3MXjm/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1W2E9HYReq0scBdWH2C3seIYHPfa-AhwA/view?usp=drivesdk",
   socials: {
     linkedin: "https://www.linkedin.com/in/kumarpradeep23/",
     github: "https://github.com/pradeepkumar823",
